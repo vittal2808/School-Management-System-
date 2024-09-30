@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+    .jumbotron {
+      background-image: url('{% static "images/bg8.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0%;
+    }
+
+
+    #admissionbutton{
+      background-color: #2c0b51;
+      border: 0cap;
+    }
+
+    .glow {
+      font-size: 70px;
+      color: #ffffff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+      webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+  {% include "school/navbar.html" %}
+  <br>
+  <br>
+  
+  <div class="jumbotron" >
+    
+
+    <br>
+    <h1 class="bold"></h1>
+
+    <br><br>
+  
+    
+    <p class="lead">
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br>
+      <a id="admissionbutton" class="btn btn-primary btn-lg" href="/studentsignup" role="button">Take Admission </a>
+    </p>
+
+    <br><br>
+  </div>
+
+  <br>
+  <br>
+  <br><br>
+
+  {% include "school/admin_teacher_student_card.html" %}
+
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  {% include "school/footer.html" %}
+</body>
+
+</html>
